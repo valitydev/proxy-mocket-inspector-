@@ -1,4 +1,4 @@
-# proxy-test-inspector
+# proxy-mocket-inspector
 
 Сервис предназначен для эмулирования работы с инспектором
 
@@ -10,7 +10,7 @@
 
 Отправка запросов на сервис:
 ```
-http(s)//{host}:{port}/proxy/test/inspector
+http(s)//{host}:{port}/proxy/mocket/inspector
 ```
 
 Конфигурация для docker-compose
@@ -19,16 +19,16 @@ http(s)//{host}:{port}/proxy/test/inspector
 version: '2'
 services:
 
-  proxy_test_inspector:
-    image: dr.rbkmoney.com/rbkmoney/proxy-test-inspector:last
+  proxy_mocket_inspector:
+    image: dr.rbkmoney.com/rbkmoney/proxy-mocket-inspector:last
     environment:
-      - SERVICE_NAME=proxy_test_inspector
+      - SERVICE_NAME=proxy_mocket_inspector
     command: |
       -Xms64m -Xmx256m
-      -jar /opt/proxy-test-inspector/proxy-test-inspector.jar
-      --logging.file=/var/log/proxy-test-inspector/proxy-test-inspector.json
+      -jar /opt/proxy-mocket-inspector/proxy-mocket-inspector.jar
+      --logging.file=/var/log/proxy-mocket-inspector/proxy-mocket-inspector.json
       --server.port=8022
-    working_dir: /opt/proxy-test-inspector
+    working_dir: /opt/proxy-mocket-inspector
     restart: on-failure:3
     
 networks:

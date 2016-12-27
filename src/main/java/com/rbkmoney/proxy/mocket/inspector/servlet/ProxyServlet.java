@@ -12,7 +12,7 @@ import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
 
-@WebServlet("/proxy/test/inspector")
+@WebServlet("/proxy/mocket/inspector")
 public class ProxyServlet extends GenericServlet {
 
     @Autowired
