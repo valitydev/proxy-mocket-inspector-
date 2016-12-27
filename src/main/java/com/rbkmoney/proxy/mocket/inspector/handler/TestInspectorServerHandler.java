@@ -1,4 +1,4 @@
-package com.rbkmoney.proxy.test.inspector.handler;
+package com.rbkmoney.proxy.mocket.inspector.handler;
 
 import com.rbkmoney.damsel.domain.RiskScore;
 import com.rbkmoney.damsel.proxy_inspector.Context;

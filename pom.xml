@@ -11,11 +11,11 @@
         <relativePath/>
     </parent>
 
-    <artifactId>proxy-test-inspector</artifactId>
+    <artifactId>proxy-mocket-inspector</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>proxy-test-inspector</name>
+    <name>proxy-mocket-inspector</name>
     <description>Проксик для тестирования и эмуляции запросов к инспектору</description>
 
     <properties>
@@ -60,7 +60,7 @@
         <dependency>
             <groupId>com.rbkmoney</groupId>
             <artifactId>damsel</artifactId>
-            <version>SNAPSHOT</version>
+            <version>1.119-2b2e19e</version>
         </dependency>
         <!--Test libs-->
         <dependency>

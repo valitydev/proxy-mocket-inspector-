@@ -1,7 +1,7 @@
-package com.rbkmoney.proxy.test.inspector.servlet;
+package com.rbkmoney.proxy.mocket.inspector.servlet;
 
 import com.rbkmoney.damsel.proxy_inspector.InspectorProxySrv;
-import com.rbkmoney.proxy.test.inspector.handler.TestInspectorServerHandler;
+import com.rbkmoney.proxy.mocket.inspector.handler.TestInspectorServerHandler;
 import com.rbkmoney.woody.api.event.CompositeServiceEventListener;
 import com.rbkmoney.woody.thrift.impl.http.THServiceBuilder;
 import com.rbkmoney.woody.thrift.impl.http.event.HttpServiceEventLogListener;

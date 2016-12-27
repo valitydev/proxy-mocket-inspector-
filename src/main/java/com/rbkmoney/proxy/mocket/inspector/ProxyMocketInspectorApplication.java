@@ -1,13 +1,13 @@
-package com.rbkmoney.proxy.test.inspector;
+package com.rbkmoney.proxy.mocket.inspector;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 
 @ServletComponentScan
-@SpringBootApplication(scanBasePackages = {"com.rbkmoney.proxy.test.inspector"})
-public class ProxyTestInspectorApplication {
+@SpringBootApplication(scanBasePackages = {"com.rbkmoney.proxy.mocket.inspector"})
+public class ProxyMocketInspectorApplication {
     public static void main(String[] args) throws Exception {
-        SpringApplication.run(ProxyTestInspectorApplication.class, args);
+        SpringApplication.run(ProxyMocketInspectorApplication.class, args);
     }
 }
