@@ -12,7 +12,7 @@
     </parent>
 
     <artifactId>proxy-mocket-inspector</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>jar</packaging>
 
     <name>proxy-mocket-inspector</name>
@@ -60,7 +60,7 @@
         <dependency>
             <groupId>com.rbkmoney</groupId>
             <artifactId>damsel</artifactId>
-            <version>1.120-2c4d1a4</version>
+            <version>1.124-c052059</version>
         </dependency>
         <!--Test libs-->
         <dependency>

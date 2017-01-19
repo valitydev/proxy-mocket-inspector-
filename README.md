@@ -2,6 +2,14 @@
 
 Сервис предназначен для эмулирования работы с инспектором
 
+Проксик реализован согласно протоколу [инспектора][1] и в качестве входящих параметров на инспекцию платежа ожидает в настройках проксика параметр `risk_score` со значением установленного из [RiskScore][2] расположенного в `domain.thrift` и возвращает объект [RiskScore][2] с присланным ему значением.
+При отсутствии параметра или передаче некорректного значения возвращается `exception InvalidRequest`
+
+Пример передаваемого параметра `domain.ProxyOptions`
+```
+{"risk_score":"low"}
+```
+
 
 ### Developers
 
@@ -38,3 +46,6 @@ networks:
       com.docker.network.enable_ipv6: "true"
       com.docker.network.bridge.enable_ip_masquerade: "true"
 ```
+
+[1]: https://github.com/rbkmoney/damsel/blob/master/proto/proxy_inspector.thrift
+[2]: https://github.com/rbkmoney/damsel/blob/master/proto/domain.thrift#L210
