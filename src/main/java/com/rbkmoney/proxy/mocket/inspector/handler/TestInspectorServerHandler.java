@@ -9,18 +9,17 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-import java.util.*;
+import java.util.EnumSet;
+import java.util.Map;
 
 @Component
 public class TestInspectorServerHandler implements InspectorProxySrv.Iface {
 
     private final static Logger LOGGER = LoggerFactory.getLogger(TestInspectorServerHandler.class);
 
-    private Map<String, String> options = Collections.emptyMap();
-
     @Override
     public RiskScore inspectPayment(Context context) throws InvalidRequest, TException {
-        options = context.getOptions();
+        Map<String, String> options = context.getOptions();
         LOGGER.info("inspectPayment options {}", options);
         RiskScore riskScoreResult;
         if (options.containsKey("risk_score")) {
