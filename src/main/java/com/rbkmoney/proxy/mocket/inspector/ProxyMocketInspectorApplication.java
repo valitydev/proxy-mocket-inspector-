@@ -7,7 +7,7 @@ import org.springframework.boot.web.servlet.ServletComponentScan;
 @ServletComponentScan
 @SpringBootApplication(scanBasePackages = {"com.rbkmoney.proxy.mocket.inspector"})
 public class ProxyMocketInspectorApplication {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         SpringApplication.run(ProxyMocketInspectorApplication.class, args);
     }
 }

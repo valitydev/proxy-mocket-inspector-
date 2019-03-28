@@ -4,23 +4,21 @@ import com.rbkmoney.damsel.base.InvalidRequest;
 import com.rbkmoney.damsel.domain.RiskScore;
 import com.rbkmoney.damsel.proxy_inspector.Context;
 import com.rbkmoney.damsel.proxy_inspector.InspectorProxySrv;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.thrift.TException;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import java.util.EnumSet;
 import java.util.Map;
 
+@Slf4j
 @Component
 public class TestInspectorServerHandler implements InspectorProxySrv.Iface {
 
-    private final static Logger LOGGER = LoggerFactory.getLogger(TestInspectorServerHandler.class);
-
     @Override
-    public RiskScore inspectPayment(Context context) throws InvalidRequest, TException {
+    public RiskScore inspectPayment(Context context) throws TException {
         Map<String, String> options = context.getOptions();
-        LOGGER.info("inspectPayment options {}", options);
+        log.info("inspectPayment options {}", options);
         RiskScore riskScoreResult;
         if (options.containsKey("risk_score")) {
             riskScoreResult = EnumSet.allOf(RiskScore.class)
@@ -31,7 +29,7 @@ public class TestInspectorServerHandler implements InspectorProxySrv.Iface {
         } else {
             throw new InvalidRequest();
         }
-        LOGGER.info("inspectPayment risk score {}", riskScoreResult);
+        log.info("inspectPayment risk score {}", riskScoreResult);
         return riskScoreResult;
     }
 }
