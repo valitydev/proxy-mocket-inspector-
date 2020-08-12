@@ -1,5 +1,7 @@
 # proxy-mocket-inspector
 
+[![Build Status](http://ci.rbkmoney.com/buildStatus/icon?job=rbkmoney_private/proxy-mocket-inspector/master)](http://ci.rbkmoney.com/job/rbkmoney_private/job/proxy-mocket-inspector/job/master/)
+
 Сервис предназначен для эмулирования работы с инспектором
 
 Проксик реализован согласно протоколу [инспектора][1] и в качестве входящих параметров на инспекцию платежа ожидает в настройках проксика параметр `risk_score` со значением установленного из [RiskScore][2] расположенного в `domain.thrift` и возвращает объект [RiskScore][2] с присланным ему значением.
@@ -18,7 +20,7 @@
 
 Отправка запросов на сервис:
 ```
-http(s)//{host}:{port}/proxy/mocket/inspector
+http://{host}:{port}/proxy/mocket/inspector
 ```
 
 Конфигурация для docker-compose
