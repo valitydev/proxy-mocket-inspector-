@@ -32,4 +32,5 @@ public class TestInspectorServerHandler implements InspectorProxySrv.Iface {
         log.info("inspectPayment risk score {}", riskScoreResult);
         return riskScoreResult;
     }
+
 }
