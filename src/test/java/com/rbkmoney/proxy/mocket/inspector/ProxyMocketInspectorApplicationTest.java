@@ -12,6 +12,6 @@ import static org.springframework.boot.test.context.SpringBootTest.WebEnvironmen
 public class ProxyMocketInspectorApplicationTest {
 
     @Test
-    public void name() {
+    public void initContextTest() {
     }
 }
