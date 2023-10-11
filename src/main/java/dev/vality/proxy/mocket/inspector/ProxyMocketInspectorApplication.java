@@ -1,4 +1,4 @@
-package com.rbkmoney.proxy.mocket.inspector;
+package dev.vality.proxy.mocket.inspector;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
