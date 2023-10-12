@@ -1,8 +1,8 @@
-package com.rbkmoney.proxy.mocket.inspector.servlet;
+package dev.vality.proxy.mocket.inspector.servlet;
 
-import com.rbkmoney.damsel.proxy_inspector.InspectorProxySrv;
-import com.rbkmoney.proxy.mocket.inspector.handler.TestInspectorServerHandler;
-import com.rbkmoney.woody.thrift.impl.http.THServiceBuilder;
+import dev.vality.damsel.proxy_inspector.InspectorProxySrv;
+import dev.vality.proxy.mocket.inspector.handler.TestInspectorServerHandler;
+import dev.vality.woody.thrift.impl.http.THServiceBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.servlet.*;

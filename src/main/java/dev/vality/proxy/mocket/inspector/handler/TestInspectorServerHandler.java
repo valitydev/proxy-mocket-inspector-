@@ -1,9 +1,9 @@
-package com.rbkmoney.proxy.mocket.inspector.handler;
+package dev.vality.proxy.mocket.inspector.handler;
 
-import com.rbkmoney.damsel.base.InvalidRequest;
-import com.rbkmoney.damsel.domain.RiskScore;
-import com.rbkmoney.damsel.proxy_inspector.Context;
-import com.rbkmoney.damsel.proxy_inspector.InspectorProxySrv;
+import dev.vality.damsel.base.InvalidRequest;
+import dev.vality.damsel.domain.RiskScore;
+import dev.vality.damsel.proxy_inspector.Context;
+import dev.vality.damsel.proxy_inspector.InspectorProxySrv;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.thrift.TException;
 import org.springframework.stereotype.Component;

@@ -1,4 +1,4 @@
-package com.rbkmoney.proxy.mocket.inspector;
+package dev.vality.proxy.mocket.inspector;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
