@@ -2,6 +2,7 @@ package dev.vality.proxy.mocket.inspector.handler;
 
 import dev.vality.damsel.base.InvalidRequest;
 import dev.vality.damsel.domain.RiskScore;
+import dev.vality.damsel.proxy_inspector.BlackListContext;
 import dev.vality.damsel.proxy_inspector.Context;
 import dev.vality.damsel.proxy_inspector.InspectorProxySrv;
 import lombok.extern.slf4j.Slf4j;
@@ -31,6 +32,11 @@ public class TestInspectorServerHandler implements InspectorProxySrv.Iface {
         }
         log.info("inspectPayment risk score {}", riskScoreResult);
         return riskScoreResult;
+    }
+
+    @Override
+    public boolean isBlacklisted(BlackListContext blackListContext) throws InvalidRequest, TException {
+        return false;
     }
 
 }
